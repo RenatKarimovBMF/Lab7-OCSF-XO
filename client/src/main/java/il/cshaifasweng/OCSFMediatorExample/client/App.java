@@ -24,9 +24,17 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-    	EventBus.getDefault().register(this);
-    	client = SimpleClient.getClient();
-    	client.openConnection();
+        EventBus.getDefault().register(this);
+
+        String host = "localhost"; // default
+        int port = 3000;
+        var params = getParameters().getRaw();
+        if (params.size() >= 1) host = params.get(0);
+        if (params.size() >= 2) port = Integer.parseInt(params.get(1));
+
+        client = SimpleClient.getClient(host, port);
+        client.openConnection();
+
         scene = new Scene(loadFXML("primary"), 640, 480);
         stage.setScene(scene);
         stage.show();
