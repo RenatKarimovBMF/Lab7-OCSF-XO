@@ -15,15 +15,16 @@ public class SimpleClient extends AbstractClient {
 
 	@Override
 	protected void handleMessageFromServer(Object msg) {
-		if (msg.getClass().equals(Warning.class)) {
+		if (msg instanceof Warning) {
 			EventBus.getDefault().post(new WarningEvent((Warning) msg));
-		}
-		else{
+		} else {
 			String message = msg.toString();
-			System.out.println(message);
+			System.out.println("FROM SERVER: " + message); // keep for debugging
+			EventBus.getDefault().post(new GameEvent(message));
 		}
 	}
-	
+
+
 	public static SimpleClient getClient() {
 		if (client == null) {
 			client = new SimpleClient("localhost", 3000);

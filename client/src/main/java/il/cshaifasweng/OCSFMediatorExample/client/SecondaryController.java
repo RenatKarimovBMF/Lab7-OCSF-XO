@@ -1,12 +1,23 @@
 package il.cshaifasweng.OCSFMediatorExample.client;
 
-import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
-public class SecondaryController {
+public class SecondaryController
+{
+
+    @FXML private Label resultLabel;
+
+    public void setResultText(String text)
+    {
+        resultLabel.setText(text);
+    }
 
     @FXML
-    private void switchToPrimary() throws IOException {
-        App.setRoot("primary");
+    private void handleClose()
+    {
+        Stage stage = (Stage) resultLabel.getScene().getWindow();
+        stage.close();
     }
 }
