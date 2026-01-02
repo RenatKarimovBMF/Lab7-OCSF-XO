@@ -31,6 +31,7 @@ public class App extends Application {
         var params = getParameters().getRaw();
         if (params.size() >= 1) host = params.get(0);
         if (params.size() >= 2) port = Integer.parseInt(params.get(1));
+        System.out.println("Connecting to " + host + ":" + port + " params=" + params);
 
         client = SimpleClient.getClient(host, port);
         client.openConnection();
@@ -74,7 +75,7 @@ public class App extends Application {
     }
 
 	public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 
 }
