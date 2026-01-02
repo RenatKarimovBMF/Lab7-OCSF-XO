@@ -8,27 +8,27 @@ Images!
 ## Server
 
 ### Server running on first computer
-![Server running on first computer](server on first pc.jpeg)
+![Server running on first computer](Server%20on%20first%20pc.jpeg)
 
 ---
 
 ## Game execution
 
 ### Game running on first computer
-![Game running on first computer](game first pc.jpeg)
+![Game running on first computer](Game%20first%20pc.jpeg)
 
 ### Game running on second computer
-![Game running on second computer](game second pc wide.jpeg)
-![Game running on second computer](game second pc closer.jpeg)
+![Game running on second computer](Game%20second%20pc%20wide.jpeg)
+![Game running on second computer](Game%20second%20pc%20closer.jpeg)
 
 ---
 
 ## Game finished
 
 ### Game finished on first computer
-![Game finished on first computer](finish first pc.jpeg)
+![Game finished on first computer](Finish%20first%20pc.jpeg)
 
 ### Game finished on second computer
-![Game finished on second computer](finish second pc.jpeg)
+![Game finished on second computer](Finish%20second%20PC.jpeg)
 
 
