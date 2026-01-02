@@ -18,7 +18,8 @@ Images!
 ![Game running on first computer](game first pc.jpeg)
 
 ### Game running on second computer
-![Game running on second computer](game second pc.jpeg)
+![Game running on second computer](game second pc wide.jpeg)
+![Game running on second computer](game second pc closer.jpeg)
 
 ---
 
